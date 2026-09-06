@@ -9,15 +9,9 @@ public class iterator
         list.add(3);
         list.add(7);
         System.out.println(list);
-        Iterator<Integer> n=list.iterator();
-        while(n.hasNext())
+        for(Integer number:list)
         {
-            Integer number=n.next();
-            if(number%2==0)
-            {
-                n.remove();
-            }
+            System.out.println(number);
         }
-        System.out.println(list);
     }
 }
