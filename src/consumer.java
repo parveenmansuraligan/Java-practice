@@ -11,7 +11,7 @@ public static void main(String args[])
     t.add(18);
     t.add(21);
     System.out.println(t);
-    Predicate<Integer> p=num->num>5;
+    Predicate<Integer> p=num->(num>5 && num<20);
     Consumer<Integer> c=num->System.out.println(num);
     t.forEach(num->{if(p.test(num)) {
         c.accept(num);
