@@ -5,12 +5,12 @@ public class functiondemo {
     {
         ArrayList<Integer> list=new ArrayList<>();
         list.add(3);
-        list.add(8);
-        list.add(7);
+        list.add(89);
+        list.add(87);
         System.out.println(list);
-        Function<Integer,Integer> f=num->num+5;
+        Function<Integer,String> f=num->"Number" +num;
         list.forEach(num-> {
-            int r = f.apply(num);
+            String r = f.apply(num);
             System.out.println(r);
         });
     }
