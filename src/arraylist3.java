@@ -13,4 +13,13 @@ public class arraylist3
         System.out.println(list);
         HashSet<Integer> set = new HashSet<>(list);
         System.out.println(set);
+        for(int i=0;i<list.size();i++)
+        {
+            for(int j=i+1;j<list.size();j++)
+            {
+                if(list.get(i).equals(list.get(j)))
+                    System.out.println(list.get(i));
+
+            }
+        }
     }}
