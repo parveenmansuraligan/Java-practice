@@ -16,7 +16,7 @@ public class arraylist3
         list1.add(100);
         list1.add(20);
         System.out.println(list1);
-        for (int num : list1) {
+        for (int num: list1) {
             if (list.contains(num)) {
                 System.out.println(num);
             }
