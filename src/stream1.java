@@ -10,5 +10,6 @@ public class stream1 {
         list.add(12);
         list.stream().forEach(num->System.out.println(num));
         list.stream().filter(num->num%2==0).forEach(num->System.out.println("Even:" +num));
+    list.stream().map(num->num*num).forEach(num->System.out.println("Squared number" +num));
     }}
 
