@@ -7,6 +7,6 @@ public class stream2 {
         number.add(22);
         number.add(20);
         number.add(30);
-        number.stream().filter(n->n>20).forEach(n->System.out.println(n));
+        number.stream().sorted().forEach(n->System.out.println(n));
     }
 }
